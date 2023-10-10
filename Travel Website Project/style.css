@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #104064;
+}
+
+/* Header */
+.header{
+    width: 100%;
+    height: 450px;
+    background-color: #daa520;
+    border-bottom-right-radius: 100px;
+}
+
+/* Navigation Bar */
+nav{
+    line-height: 80px;
+}
+nav label{
+    margin-left: 70px;
+}
+nav label img{
+    width: 70px;
+    height: 70px;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 50px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 40px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav ul li a.active,a:hover{
+    color: #062f4e;
+}
+/* Navigation Bar */
+
+.intro{
+    width: 85%;
+    margin: 5% auto;
+    text-align: center;
+}
+.intro h1{
+    padding-bottom: 15px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 2px #cfcccc;
+}
+.intro p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Header */
+
+/* Our offers */
+.head{
+    width: 85%;
+    margin: 20px auto;
+}
+.head h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+.head p{
+    text-align: center;
+    font-size: 18px;
+}
+.head p a{
+    color: #e62222;
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+.flex .country{
+    width: 350px;
+    height: 400px;
+    background-color: #ccc;
+    margin: 20px 5px;
+}
+.flex .country img{
+    width: 350px;
+    height: 350px;
+}
+.flex .country label.hero{
+    float: left;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.flex .country label.price{
+    float: right;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Our offers */
+
+/* Why choose us? */
+.choose{
+    width: 100%;
+    background: #daa520;
+    margin-bottom: 0;
+}
+.reasons{
+    padding: 20px;
+}
+.flex .reason{
+    flex-basis: 30%;
+    margin: 30px 10px 10px 10px;
+}
+.reason i.fa{
+    font-size: 35px;
+    margin-left: 45%;
+    margin-bottom: 20px;
+}
+.flex .reason h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+/* Why choose us? */
+
+.testimonials{
+    width: 85%;
+    padding: 24px;
+    margin: 20px auto;
+}
+.flex .test{
+    flex-basis: 30%;
+    margin: 30px 10px 10px 10px;
+    border: 1px solid #bfbfbf;
+    box-shadow:5px 5px 5px #ccc;
+    padding: 30px;
+}
+.flex .test i.fa{
+    font-size: 30px;
+}
+.flex .test i.fa.fa-quote-right{
+    margin-left: 90%;
+}
+/* testimonials */
+
+.one{
+    width: 25%;
+}
+.each label img{
+    width: 70px;
+    height: 70px;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 35px;
+    padding-left: 35px;
+    line-height: 25px;
+}
+/* .footer .each{
+    
+} */
+
+@media (max-width: 770px){
+    .flex{
+        float: none;
+    }
+    .flex .reason, .flex .test{
+        flex-basis: 50%;
+    }
+}
+@media (max-width: 800px){
+    nav ul{
+        display: none;
+    }
+    .flex{
+        float: none;
+    }
+    .flex .reason, .flex .test{
+        flex-basis: 100%;
+    }
+}
